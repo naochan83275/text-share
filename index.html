@@ -2,9 +2,10 @@
 <html>
   <head>
     <mata name="robots" content="noindex,nofollow">
-    <title id="title"></title>
+    <title id="title">新規作成 | text-share</title>
     <meta charset="UTF-8">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="content">
@@ -18,18 +19,27 @@
         </p>
         <p class="subtitle">〜使い方〜</p>
         <p>
-          ①モードを選択します｡(mode=javascript,text)<br>
+          ①モードを選択します｡(mode=javascript,text,HTML)<br>
           ②テキスト(またはjavascript)を入力します｡(text={文字列､またはスクリプト})<br>
           ③生成ボタンを押します｡(無駄機能として0.8秒間ボタンがロード中デザインになります｡)<br>
           ④URLが生成されます｡ご自由にお使いください｡
         </p>
+      </div>
+      <div class="box">
+        <p class="subtitle">新規作成</p>
+        <p>モード</p>
+        <select>
+          <option>javascript</option>
+          <option>text</option>
+          <option>HTML</option>
+        </select>
+        <p>テキスト</p>
+        <textarea placeholder="テキスト､HTML､またはjavascriptを入力してください｡"></textarea>
+        <br>
+        <button class="button is-primary is-medium" onclick="geturl()">生成!</button>
+      </div>
+      <script src="url.js"></script>
     </div>
-    <div class="box">
-      <p class="subtitle">新規作成</p>
-      <p>モード</p>
-      <select>
-        <option>javascript</option>
-        <option>text</option>
-      </select>
+    <script src="script.js"></script>
   </body>
 </html>
