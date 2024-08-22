@@ -3,6 +3,7 @@ function _urlparam(paramid){
     let _url = new URL(url_string);
     let paramdata =url.searchParams.get(paramid);
     return paramdata;
+    alert(paramdata)
 }
 var base_url = 'https://naochan83275.github.io/text-share/?'
 if(base_url = window.location.href){
