@@ -1,7 +1,7 @@
-function._urlparam(paramid){
+function _urlparam(paramid){
     let url_string = window.location.href;
     let _url = new URL(url_string);
-    let paramdata =url.searchParams.get(paramid);
+    let paramdata = _url.searchParams.get(paramid);
     alert(paramdata);
     return paramdata;
 }
