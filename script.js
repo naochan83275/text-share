@@ -1,14 +1,9 @@
-function _urlparam(paramid){
-    let url_string = window.location.href;
-    let _url = new URL(url_string);
-    let paramdata = _url.searchParams.get(paramid);
-    alert(paramdata);
-    return paramdata;
-}
+const urlParams = new URLSearchParams(window.location.search);
+
 var base_url = 'https://naochan83275.github.io/text-share/?'
 if(window.location.href = window.location.href){
-  if(_urlparam('mode') = 'HTML'){
-      var text = _urlparam('text');
+  if(urlParams.get('mode') = 'HTML'){
+      var text = urlParams.get('text');
       if ( ~text.indexOf('</html>')) {
           var text = text.replace('<!DOCTYPE html>', '');
           var text = text.replace('<html>', '');
