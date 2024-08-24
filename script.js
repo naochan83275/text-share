@@ -6,7 +6,7 @@ function _urlparam(paramid){
     return paramdata;
 }
 var base_url = 'https://naochan83275.github.io/text-share/?'
-if(base_url = window.location.href){
+if(window.location.href = window.location.href){
   if(_urlparam('mode') = 'HTML'){
       var text = _urlparam('text');
       if ( ~text.indexOf('</html>')) {
